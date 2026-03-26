@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IPL Prediction System
 
 This repository provides a clean backend skeleton for an IPL match prediction workflow. It is organized so data ingestion, feature filtering, feature building, model training, inference, and evaluation each live in separate modules.
@@ -60,3 +61,7 @@ Run the API locally:
 ```bash
 uvicorn api.app:app --reload
 ```
+=======
+# ipl2026-LM
+A prediction model based on pre-match data for Indian Premier League 2026.
+>>>>>>> db0d7fb5ca66bf72f7100a3e094d8021a0d51ebe
