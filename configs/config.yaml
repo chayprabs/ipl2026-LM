@@ -1,0 +1,25 @@
+data:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  available_sources:
+    - match_data
+    - player_stats
+    - weather_api
+    - odds_api
+
+features:
+  use_team_features: true
+  use_player_features: true
+  use_venue_features: true
+  use_weather_features: true
+  use_odds_features: true
+
+model:
+  name: xgboost_placeholder
+  target: match_winner
+  artifact_path: artifacts/ipl_match_predictor.pkl
+  params:
+    max_depth: 6
+    learning_rate: 0.1
+    n_estimators: 200
